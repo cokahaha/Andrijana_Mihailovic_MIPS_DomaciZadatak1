@@ -1,0 +1,11 @@
+1. Koristimo STM32F103C6.
+2. U programu Proteus 8 Pro crtam odgovarajuću šemu, na sledeći način: 
+Biram port B zato što u mom imenu i prezimenu (Andrijana Mihailović) ima više suglasnika. 
+Biram pin1 zato što u mom imenu i prezimenu ima 19 slova, a 19 pri deljenju sa 6 daje ostatak 1.
+3. U programu STM32CubeIDE, u okviru fajla main.c pišem kod. U mrtvoj petlji while(1) postoje dve for petlje.
+Prvi takt ponavlja se 9 puta (broj slova imena) i predstavljen je prvom for petljom,
+gde je širina impulsa 9ms(broj slova imena), a širina pauze 10ms(broj slova prezimena).
+Drugi takt ponavlja se 10 puta (broj slova prezimena) i predstavljen je drugom for petljom,
+gde je širina impulsa 10ms(broj slova prezimena), a širina pauze 9ms(broj slova imena).
+4. Generišem .hex fajl i pokrećem ga u Proteusu.
+
